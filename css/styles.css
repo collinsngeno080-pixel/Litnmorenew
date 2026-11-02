@@ -1,0 +1,132 @@
+/* =========================================================
+   Lit & More — shared stylesheet
+   Brand: deep legal red #8B1A1A · warm off-white #F7F3EE
+   Font: Montserrat (Google Fonts)
+   ========================================================= */
+
+:root{
+  --red:#8B1A1A;
+  --red-dark:#6E1414;
+  --ink:#1A1A1A;
+  --text:#4A4643;
+  --muted:#5E5955;
+  --warm:#F7F3EE;
+  --line:#ECE6DE;
+  --white:#FFFFFF;
+  --footer:#1F1B1A;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);font-family:Montserrat,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--red)}
+a:hover{color:var(--red-dark)}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* Layout */
+.wrap{max-width:1240px;margin:0 auto}
+.pad{padding-left:48px;padding-right:48px}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--line)}
+.hdr-in{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo-mark{width:40px;height:40px;border-radius:8px;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+.logo-word{font-weight:800;font-size:20px}
+.nav{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+.nav a{color:var(--ink);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--red)}
+.nav a.on{color:var(--red);border-bottom-color:var(--red);font-weight:700}
+.menu{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:8px;background:var(--white);align-items:center;justify-content:center;cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--red);color:var(--white);text-decoration:none;font-weight:700;font-size:16px;padding:15px 26px;border-radius:8px;border:2px solid var(--red);font-family:inherit;cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:var(--red-dark);border-color:var(--red-dark);color:var(--white)}
+.btn-o{background:transparent;color:var(--red)}
+.btn-o:hover{background:var(--red);color:var(--white)}
+.btn-sm{font-size:15px;padding:11px 20px}
+.btn-white{background:var(--white);color:var(--red);border-color:var(--white)}
+.btn-white:hover{background:var(--warm);border-color:var(--warm);color:var(--red)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--white)}
+.btn-ghost:hover{background:var(--white);color:var(--red)}
+
+/* Type */
+.eyebrow{margin:0;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--red)}
+.h1{margin:0;font-size:54px;line-height:1.1;font-weight:800;letter-spacing:-1px}
+.h1 em,.h2 em{color:var(--red)}
+.h2{margin:0;font-size:44px;font-weight:800;letter-spacing:-0.5px;line-height:1.12}
+.lead{margin:0;font-size:18px;line-height:1.6;color:var(--text)}
+.body{margin:0;font-size:15px;line-height:1.65;color:var(--text)}
+.more{font-weight:700;font-size:15px;text-decoration:none}
+
+/* Cards */
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 24px rgba(26,26,26,0.06)}
+
+/* Picture slots — replace each .slot with an <img> when photos are ready */
+.slot{background:#EFE8DF;border:2px dashed #C9B9AE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px}
+.slot-l{margin:0;font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--red)}
+.slot-t{margin:0;font-size:14px;line-height:1.5;color:var(--text);max-width:340px}
+
+/* Placeholder text still to be filled in */
+.ph{background:#FBF4F2;border:1px dashed #D9B8B8;border-radius:6px;padding:2px 6px;color:var(--red);font-weight:600}
+
+/* Services page */
+.tick{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.55;color:var(--ink);margin:0}
+
+/* How It Works page */
+.step{display:flex;gap:32px;align-items:flex-start;padding:36px 0;border-bottom:1px solid var(--line)}
+.num{flex:none;width:72px;height:72px;border-radius:50%;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px}
+.check{display:flex;gap:14px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:600;margin:0}
+
+/* About page */
+.rev{margin:0;padding:32px;display:flex;flex-direction:column;gap:16px}
+.stars{margin:0;color:var(--red);font-size:18px;letter-spacing:3px}
+
+/* Resources page */
+.icon{width:64px;height:64px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center}
+
+/* Contact page */
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field label{font-size:14px;font-weight:600}
+.field input,.field select,.field textarea{font-family:inherit;font-size:15px;color:var(--ink);background:var(--white);border:1px solid #CFC6BD;border-radius:8px;padding:13px 14px;min-height:48px;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--red);outline-offset:1px;border-color:var(--red)}
+.row{display:flex;gap:14px;align-items:flex-start}
+[hidden]{display:none !important}
+
+/* Footer */
+.ftr{background:var(--footer);color:#E8E2DC;padding-top:64px;padding-bottom:32px}
+.ftr a{color:#E8E2DC;text-decoration:none}
+.ftr a:hover{color:var(--white);text-decoration:underline}
+.ftr-h{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--white)}
+
+/* Mobile */
+@media (max-width: 900px){
+  .nav,.hdr-cta{display:none}
+  .menu{display:flex}
+  .hdr.open .nav{display:flex;position:absolute;top:84px;left:-16px;right:-16px;flex-direction:column;align-items:stretch;gap:0;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(26,26,26,0.08);padding:8px 16px 16px}
+  .hdr.open .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .hdr.open .nav a.on{border-bottom-color:var(--line)}
+  .pad{padding-left:16px;padding-right:16px}
+  .h1{font-size:40px !important}
+  .h2{font-size:32px !important}
+  .step{gap:18px}
+  .num{width:52px;height:52px;font-size:18px}
+}
+
+/* Contact form: one page, two parts, two columns */
+#project-form{display:flex;flex-direction:column;gap:36px}
+.fstep{border:0;margin:0;padding:0;min-width:0;display:flex;flex-direction:column;gap:22px}
+.fstep[data-step="2"]{padding-top:32px;border-top:1px solid var(--line)}
+.mstep{display:flex;align-items:center;gap:10px;margin:0;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red)}
+.mstep span{width:28px;height:28px;border-radius:50%;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:0}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.req{color:var(--red)}
+.form-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+.form-error{margin:0;color:#A3191F;font-size:14px;font-weight:600}
+.field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#A3191F;background:#FFF8F8}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width: 600px){
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .form-actions .btn{flex:1 1 auto;text-align:center}
+}
