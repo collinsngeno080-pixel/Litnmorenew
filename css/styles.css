@@ -131,3 +131,20 @@ a:hover{color:var(--red-dark)}
   .grid2{grid-template-columns:minmax(0,1fr)}
   .form-actions .btn{flex:1 1 auto;text-align:center}
 }
+
+/* Home hero: full-width photo with burgundy fade */
+.hero-dark{position:relative;min-height:600px;display:flex;align-items:center;padding-top:72px;padding-bottom:80px;background-color:#1E1412;background-image:linear-gradient(90deg,rgba(24,12,11,.94) 0%,rgba(42,14,14,.86) 34%,rgba(42,14,14,.45) 52%,rgba(42,14,14,0) 70%),url("../images/hero-night-desk.jpg");background-size:cover;background-position:right center;color:#FFFFFF}
+.hero-dark .wrap{width:100%}
+.hero-dark .hero-copy{max-width:760px;display:flex;flex-direction:column;gap:24px}
+.hero-dark .eyebrow{color:#E9B9B0}
+.hero-dark h1{margin:0;font-size:54px;line-height:1.1;font-weight:800;letter-spacing:-1px;color:#FFFFFF}
+.hero-dark h1 em{color:#F0C4B8}
+.hero-dark .lead{color:#EDE4DE;max-width:520px}
+.hero-dark .btn-cream{background:#F7F3EE;color:#8B1A1A;border-color:#F7F3EE}
+.hero-dark .btn-cream:hover{background:#FFFFFF;border-color:#FFFFFF;color:#6E1414}
+.hero-dark .call{margin:0;font-size:14px;color:#D9CFC8}
+.hero-dark .call a{color:#FFFFFF;font-weight:700;text-decoration:none}
+.hero-dark .call a:hover{text-decoration:underline}
+@media (max-width: 900px){
+  .hero-dark{min-height:560px;background-image:linear-gradient(180deg,rgba(24,12,11,.84) 0%,rgba(26,11,10,.95) 32%,rgba(24,12,11,.97) 100%),url("../images/hero-night-desk.jpg");background-position:100% center;padding-top:56px;padding-bottom:56px}
+}
