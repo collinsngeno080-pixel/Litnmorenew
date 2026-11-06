@@ -103,7 +103,8 @@ a:hover{color:var(--red-dark)}
 
 /* Mobile */
 @media (max-width: 900px){
-  .nav,.hdr-cta{display:none}
+  .nav{display:none}
+  .hdr-cta{margin-left:auto}
   .menu{display:flex}
   .hdr.open .nav{display:flex;position:absolute;top:84px;left:-16px;right:-16px;flex-direction:column;align-items:stretch;gap:0;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(26,26,26,0.08);padding:8px 16px 16px}
   .hdr.open .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
@@ -128,6 +129,8 @@ a:hover{color:var(--red-dark)}
 .field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#A3191F;background:#FFF8F8}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media (max-width: 600px){
+  .hdr-in{gap:12px}
+  .hdr-cta{font-size:14px;padding:10px 14px;white-space:nowrap}
   .grid2{grid-template-columns:minmax(0,1fr)}
   .form-actions .btn{flex:1 1 auto;text-align:center}
 }
