@@ -151,3 +151,6 @@ a:hover{color:var(--red-dark)}
 @media (max-width: 900px){
   .hero-dark{min-height:560px;background-image:linear-gradient(180deg,rgba(24,12,11,.84) 0%,rgba(26,11,10,.95) 32%,rgba(24,12,11,.97) 100%),url("../images/hero-night-desk.jpg");background-position:100% center;padding-top:56px;padding-bottom:56px}
 }
+
+/* About Us photo: shorter on phones */
+@media (max-width: 900px){.about-photo{height:340px !important}}
